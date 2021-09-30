@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS + Express + MongoDB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link href="/stylesheets/style.css" rel="stylesheet" type="text/css"> -->
+<link href="/stylesheets/w3.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <a href="http://localhost:3000" class="w3-bar-item w3-button">Home</a>
+  <a href="http://localhost:3000/store" class="w3-bar-item w3-button">Loja</a>
+  <a href="http://localhost:3000/client" class="w3-bar-item w3-button">Clientes</a>
+  <a href="http://localhost:3000/user" class="w3-bar-item w3-button">Cadastro</a>
+</div>
+
+<div class="w3-main" style="margin-left:200px">
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Minha Web Page</h1>
+  </div>
+</div>
+
+<div class="w3-container">
+  <h3>Barra lateral responsiva</h3>
+<p>A barra lateral neste exemplo sempre será exibida em telas com largura superior a 992 px e oculta em tablets ou telefones celulares (telas com menos de 993 px de largura).</p>
+<p>Em tablets e telefones celulares, a barra lateral é substituída por um ícone de menu para abrir a barra lateral.</p>
+<p>A barra lateral se sobreporá ao conteúdo da página.</p>
+<p><b>Redimensione a janela do navegador para ver como funciona.</b></p>
+</div>
+   
+</div>
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+
+
+  </footer>
+
+<div class="w3-teal w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>. Template base. Desenvolvimento: <a href="https://www.aondenet.com" title="aondenet.com" target="_blank" class="w3-hover-opacity">aondenet</a> </div>
+
+  <!-- End page content -->
+</div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+</body>
+</html>
